@@ -1,0 +1,6 @@
+---
+ - name: test demo
+   hosts: demo
+   become: yes
+   tasks:
+     - shell: docker run -it --name testimg2 irannabngr92/mydockerimg:myimg2  /bin/bash
